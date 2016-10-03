@@ -9,7 +9,6 @@ function getOneExcursion (req,res) {
 			if (err) {
 				return console.error(err);
 			}
-			console.log('Excursion: ', JSON.stringify(excursion, null, 2))
 			res.json(excursion);
 		});
 };
