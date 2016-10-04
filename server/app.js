@@ -22,7 +22,18 @@ app.use(bodyParser.json() );
 app.use('/',routes);
 
 
+//API authentication configured in 3scale to use the user_key mode
+var Client = require('3scale').Client;
+
+client = new Client("your provider key");
+
+client.authrep_with_user_key({ "user_key": "your key", "usage": { "hits": 1 } }, function(response){
+  console.log(response);
+});
+
+
 module.exports = app;
+module.exports = Client;
 
 
 

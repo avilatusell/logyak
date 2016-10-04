@@ -25,6 +25,7 @@
   },
   "homepage": "https://github.com/avilatusell/logyak#readme",
   "dependencies": {
+    "3scale": "^0.7.2",
     "angular": "^1.5.8",
     "angular-route": "^1.5.8",
     "aws-sdk": "^2.5.5",
